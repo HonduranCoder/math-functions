@@ -85,8 +85,13 @@ have to be resourceful to figure out how to do this. However, you may continue
 to use the + operator for string concatenation.
 */
 
+//Katie & Yosef helped with this.
 export function sumArrayWithThreeNumbers(sumArr) {
-
+    let totalSum = (sum((sum(sumArr[0], sumArr[1])[0]), sumArr[2]))[0];
+    let firstItem = `${sumArr} was passed in as an array of numbers, and ${totalSum} is their sum.`;
+    let mathArray = [];
+    mathArray.push(totalSum, firstItem);
+    return mathArray;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
