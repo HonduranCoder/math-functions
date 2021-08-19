@@ -57,7 +57,7 @@ how to do this. However, you may continue to use the + operator for string conca
 */
 
 //Diyana helped me with this.
-export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
+export function sumAndMultiplyThreeNumbers(a, b, c) { 
     let mathArray = [];
     let firstItem = (sum((sum(a, b)[0]), c))[0];
     let secondItem = (multiply((multiply(a, b)[0]), c))[0];
