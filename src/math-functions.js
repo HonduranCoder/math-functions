@@ -56,8 +56,15 @@ function that you've already created. You're going to have to be resourceful to 
 how to do this. However, you may continue to use the + operator for string concatenation.
 */
 
+//Diyana helped me with this.
 export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
-
+    let mathArray = [];
+    let firstItem = (sum((sum(a, b)[0]), c))[0];
+    let secondItem = (multiply((multiply(a, b)[0]), c))[0];
+    let thirdItem = `${a} and ${b} and ${c} sum to ${firstItem}.`;
+    let fourthItem = `The product of ${a} and ${b} and ${c} is ${secondItem}.`;
+    mathArray.push(firstItem, secondItem, thirdItem, fourthItem);
+    return mathArray;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
