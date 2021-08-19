@@ -29,7 +29,10 @@ Write a function called multiply() that takes in two numbers as arguments and re
 */
 
 export function multiply(a, b) {
-
+    let sumArray = []; 
+    let totalSum = a * b; 
+    sumArray.push(totalSum, `The product of ${a} and ${b} is ${totalSum}.`); 
+    return sumArray;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
